@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AMO-angular"
+    }
+  },
+  "defaultProject": "AMO-angular",
+  "cli": {
+    "analytics": "9754fe4c-55bd-4ed1-a4ba-0a17850009e0"
+  }
 }
