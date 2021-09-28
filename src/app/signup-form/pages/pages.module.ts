@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PagesComponent } from './pages.component';
 import { PageRoutingModule } from './page-routing.module';
-import { FormModule } from '../AMO/molecules/form/form.module';
+import { Org1Module } from '../AMO/organism/org1/org1.module';
 
 
 
@@ -15,8 +15,9 @@ import { FormModule } from '../AMO/molecules/form/form.module';
   ],
   imports: [
     CommonModule,
-    FormModule,
+    Org1Module,
     PageRoutingModule
+    
   ]
 })
 export class PagesModule { }
