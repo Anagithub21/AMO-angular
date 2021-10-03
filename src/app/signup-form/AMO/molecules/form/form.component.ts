@@ -1,18 +1,35 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'ank-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss']
 })
-export class FormComponent implements OnInit {
-  @Input() headinglabel:string
-  @Input() name:string
-  @Input() buttonlabel:string
-  namelabel='Name'
-  constructor() { }
+export class FormComponent {
+  @Input() name: string
+  @Input() buttonlabel: string
+  text: string = 'text'
+  number: string = 'number'
+  email: string = 'email'
+  password: string = 'password'
+  numberplaceholder: string = 'Enter Age'
+  form: FormGroup;
+  @Output() messageEvent = new EventEmitter<any>();
 
-  ngOnInit(): void {
+  constructor(fb: FormBuilder) {
+    this.form = fb.group({
+      firstname: ['', [Validators.required]],
+      lastname: ['', [Validators.required]],
+      age: ['', [Validators.required]],
+      mobilenumber: ['', [Validators.required]],
+      email: ['', [Validators.required]],
+      password:['',Validators.required]
+    });
   }
 
+  onSubmit() { 
+    this.messageEvent.emit(this.form.value)
+  }
+  
 }

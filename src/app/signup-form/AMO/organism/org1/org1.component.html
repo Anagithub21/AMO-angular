@@ -1,2 +1,2 @@
-<ank-header [headerlabel]="headerlabel"></ank-header>
-<ank-form [headinglabel]="formlabel" [name]="namelabel" [buttonlabel]="buttonlabel"></ank-form>
+<ank-header [headerlabel]="headerlabel" [subheaderlabel]="subheaderlabel"></ank-header>
+<ank-form  [name]="namelabel" [buttonlabel]="buttonlabel" (messageEvent)="receiveMessage($event)"></ank-form>

@@ -1,4 +1,18 @@
-
-<ank-label [text]="headinglabel"></ank-label>
-<ank-text [text]="name"></ank-text>
-<ank-button [text]="buttonlabel"></ank-button>
+<form [formGroup]="form" (ngSubmit)="onSubmit();">
+    <ank-input [inputtype]="text" [inputplaceholder]="'Enter First Name'" [control]="form.controls.firstname">
+    </ank-input>
+    <br /><br />
+    <ank-input [inputtype]="text" [inputplaceholder]="'Enter Last Name'" [control]="form.controls.lastname"></ank-input>
+    <br /><br />
+    <ank-input [inputtype]="number" [inputplaceholder]="'Enter Age'" [control]="form.controls.age"></ank-input>
+    <br /><br />
+    <ank-input [inputtype]="number" [inputplaceholder]="'Enter Mobile Number'" [control]="form.controls.mobilenumber">
+    </ank-input>
+    <br /><br />
+    <ank-input [inputtype]="email" [inputplaceholder]="'Enter Email '" [control]="form.controls.email"></ank-input>
+    <br /><br />
+    <ank-input [inputtype]="password" [inputplaceholder]="'Enter Password'" [control]="form.controls.password">
+    </ank-input>
+    <br /><br />
+    <ank-button [type]="'submit'" [text]="buttonlabel"></ank-button>
+</form>

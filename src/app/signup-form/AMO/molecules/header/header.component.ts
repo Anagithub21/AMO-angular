@@ -5,11 +5,9 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   @Input() headerlabel: string
-  constructor() { }
+  @Input() subheaderlabel:string
 
-  ngOnInit(): void {
-  }
 
 }
