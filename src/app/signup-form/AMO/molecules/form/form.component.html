@@ -8,11 +8,13 @@
     <br /><br />
     <ank-input [inputtype]="number" [inputplaceholder]="'Enter Mobile Number'" [control]="form.controls.mobilenumber">
     </ank-input>
+    <br/><br/>
+    <ank-select [country]="country" [control]="form.controls.country"></ank-select>
     <br /><br />
     <ank-input [inputtype]="email" [inputplaceholder]="'Enter Email '" [control]="form.controls.email"></ank-input>
     <br /><br />
     <ank-input [inputtype]="password" [inputplaceholder]="'Enter Password'" [control]="form.controls.password">
     </ank-input>
     <br /><br />
-    <ank-button [type]="'submit'" [text]="buttonlabel"></ank-button>
+    <ank-button [type]="'submit'" [text]="buttonlabel" [disabl]="!form.valid"></ank-button>
 </form>

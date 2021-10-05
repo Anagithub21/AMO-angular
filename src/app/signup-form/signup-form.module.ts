@@ -7,8 +7,8 @@ import { SignupFormRoutingModule } from './signup-form-routing.module';
 
 @NgModule({
   declarations: [
-    SignupFormComponent,
-    
+    SignupFormComponent
+  
     
   ],
   exports: [

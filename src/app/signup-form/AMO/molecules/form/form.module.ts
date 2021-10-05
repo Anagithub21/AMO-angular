@@ -6,6 +6,7 @@ import { TextModule } from '../../atoms/text/text.module';
 import { ButtonModule } from '../../atoms/button/button.module';
 import { InputModule } from '../../atoms/input/input.module';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { SelectModule } from '../../atoms/select/select.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     ButtonModule,
     InputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SelectModule
     
   ]
 })

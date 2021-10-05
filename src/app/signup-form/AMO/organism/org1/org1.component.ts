@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'ank-org1',
@@ -6,11 +6,14 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./org1.component.scss']
 })
 export class Org1Component {
-  headerlabel="Sign up form"
-  subheaderlabel="Please fill in the form to create an Account"
-  namelabel="first_name"
-  buttonlabel="click me"
-  message:any
+  headerlabel = "Sign up form"
+  subheaderlabel = "Please fill in the form to create an Account"
+  namelabel = "first_name"
+  buttonlabel = "click me"
+  message: any
+  @Input() showtable: boolean
+  @Input() tabledata: []
+  @Input() header: []
   @Output() messageEvent = new EventEmitter<string>();
 
   receiveMessage($event) {

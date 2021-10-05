@@ -1,2 +1,3 @@
 <ank-org1 (messageEvent)="receiveData($event)"></ank-org1>
-<p>{{tabledata|json}}</p>
+
+ <ank-org2 *ngIf="data.length>0" [tableData]="data" [header]=[header]></ank-org2>

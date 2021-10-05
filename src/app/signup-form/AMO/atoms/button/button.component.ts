@@ -5,12 +5,10 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent {
   @Input() text: string
   @Input() type:string
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @Input() disabl:boolean
+  
 
 }

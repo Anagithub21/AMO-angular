@@ -1,0 +1,8 @@
+<select  [formControl]="formControl">
+    <option value="">
+      select Country
+    </option>
+    <option *ngFor="let data of country" value="{{data}}">
+        {{data}}
+    </option>
+</select>

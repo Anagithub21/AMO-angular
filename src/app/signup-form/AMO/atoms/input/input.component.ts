@@ -6,9 +6,11 @@ import { FormControl } from '@angular/forms';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss']
 })
-export class InputComponent implements OnInit {
+export class InputComponent  {
   @Input() inputtype: string
   @Input() inputplaceholder:string
+  @Input() label:string
+  @Input() name:string
   @Input() set control(value: FormControl) {
     if (this.formControl !== value) {
       this.formControl = value;
@@ -16,9 +18,8 @@ export class InputComponent implements OnInit {
   }
 
   formControl: FormControl;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+ abcd(e){
+  console.log(e.target.value)
+ }
 
 }

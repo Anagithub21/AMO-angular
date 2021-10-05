@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DatapageComponent } from './datapage.component';
+import { Org2Component } from './org2.component';
 
-describe('DatapageComponent', () => {
-  let component: DatapageComponent;
-  let fixture: ComponentFixture<DatapageComponent>;
+describe('Org2Component', () => {
+  let component: Org2Component;
+  let fixture: ComponentFixture<Org2Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DatapageComponent ]
+      declarations: [ Org2Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DatapageComponent);
+    fixture = TestBed.createComponent(Org2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

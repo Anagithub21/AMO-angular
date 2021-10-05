@@ -15,6 +15,7 @@ import { HeaderModule } from '../../molecules/header/header.module';
     CommonModule,
     FormModule,
     HeaderModule
+  
   ]
 })
 export class Org1Module { }

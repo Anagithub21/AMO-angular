@@ -15,6 +15,7 @@ export class FormComponent {
   password: string = 'password'
   numberplaceholder: string = 'Enter Age'
   form: FormGroup;
+  country=['India']
   @Output() messageEvent = new EventEmitter<any>();
 
   constructor(fb: FormBuilder) {
@@ -23,6 +24,7 @@ export class FormComponent {
       lastname: ['', [Validators.required]],
       age: ['', [Validators.required]],
       mobilenumber: ['', [Validators.required]],
+      country:['',[Validators.required]],
       email: ['', [Validators.required]],
       password:['',Validators.required]
     });
