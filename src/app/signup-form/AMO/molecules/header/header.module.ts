@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
-import { H1headingModule } from '../../atoms/h1heading/h1heading.module';
-import { H2headingModule } from '../../atoms/h2heading/h2heading.module';
+import { HeadingModule } from '../../atoms/heading/heading.module';
 
 
 
@@ -14,8 +13,7 @@ import { H2headingModule } from '../../atoms/h2heading/h2heading.module';
   ],
   imports: [
     CommonModule,
-    H1headingModule,
-    H2headingModule
+    HeadingModule
   ]
 })
 export class HeaderModule { }

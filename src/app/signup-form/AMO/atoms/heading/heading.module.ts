@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { H2headingComponent } from './h2heading.component';
+import { HeadingComponent } from './heading.component';
 
 
 
 @NgModule({
-  declarations: [H2headingComponent],
+  declarations: [HeadingComponent],
   exports:[
-    H2headingComponent
+    HeadingComponent
   ],
   imports: [
     CommonModule
   ]
 })
-export class H2headingModule { }
+export class HeadingModule { }

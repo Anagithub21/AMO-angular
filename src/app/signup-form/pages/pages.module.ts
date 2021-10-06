@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PagesComponent } from './pages.component';
 import { PageRoutingModule } from './page-routing.module';
-import { Org1Module } from '../AMO/organism/org1/org1.module';
-import { Org2Module } from '../AMO/organism/org2/org2.module';
+import { FormorganismModule } from '../AMO/organism/formorganism/formorganism.module';
+import { TableorganismModule } from '../AMO/organism/tableorganism/tableorganism.module';
 
 
 
@@ -16,8 +16,8 @@ import { Org2Module } from '../AMO/organism/org2/org2.module';
   ],
   imports: [
     CommonModule,
-    Org1Module,
-    Org2Module,
+    FormorganismModule,
+    TableorganismModule,
     PageRoutingModule
     
   ]

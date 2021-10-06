@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SignupFormComponent } from './signup-form.component';
 import { SignupFormRoutingModule } from './signup-form-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -16,7 +17,8 @@ import { SignupFormRoutingModule } from './signup-form-routing.module';
   ],
   imports: [
     CommonModule,
-    SignupFormRoutingModule
+    SignupFormRoutingModule,
+    HttpClientModule
   ]
 })
 export class SignupFormModule { }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { H2headingComponent } from './h2heading.component';
+import { FormorganismComponent } from './formorganism.component';
 
-describe('H2headingComponent', () => {
-  let component: H2headingComponent;
-  let fixture: ComponentFixture<H2headingComponent>;
+describe('Org1Component', () => {
+  let component: FormorganismComponent;
+  let fixture: ComponentFixture<FormorganismComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ H2headingComponent ]
+      declarations: [ FormorganismComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(H2headingComponent);
+    fixture = TestBed.createComponent(FormorganismComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

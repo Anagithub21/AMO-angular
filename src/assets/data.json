@@ -1,0 +1,20 @@
+[
+    {
+        "firstname": "Ankita",
+        "lastname": "Shrivastava",
+        "age":24 ,
+        "mobilenumber": 7894562,
+        "country": "India",
+        "email": "anny@gmail.com",
+        "password": "1234568"
+    },
+    {
+        "firstname": "Ankita",
+        "lastname": "Shrivastava",
+        "age":24 ,
+        "mobilenumber": 45612378,
+        "country": "India",
+        "email": "b@gmail.com",
+        "password": "12345689"
+    }
+]

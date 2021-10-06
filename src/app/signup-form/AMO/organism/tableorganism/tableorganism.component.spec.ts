@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Org2Component } from './org2.component';
+import { TableorganismComponent } from './tableorganism.component';
 
 describe('Org2Component', () => {
-  let component: Org2Component;
-  let fixture: ComponentFixture<Org2Component>;
+  let component: TableorganismComponent;
+  let fixture: ComponentFixture<TableorganismComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Org2Component ]
+      declarations: [ TableorganismComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Org2Component);
+    fixture = TestBed.createComponent(TableorganismComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

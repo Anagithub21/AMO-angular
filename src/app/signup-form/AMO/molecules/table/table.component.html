@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th *ngFor="let head of header[0]" [appSort]="tableData" data-order="desc" scope="col">
+            {{head|uppercase}}
+        </th>
+    </tr>
+
+    <tr *ngFor="let item of tableData;index as i">
+        <td *ngFor="let head of header[0]">
+            <ank-label *ngIf="head!='password' else pwdtemp;" [text]="item[head]"></ank-label>
+            <ng-template #pwdtemp>
+                <ank-label [text]="item[head] | password:type[i]"></ank-label>
+                <ank-button [text]="type[i]?type[i]:'Hide'" (click)="getpwd(i)"></ank-button>
+            </ng-template>
+        </td>
+
+    </tr>
+
+</table>

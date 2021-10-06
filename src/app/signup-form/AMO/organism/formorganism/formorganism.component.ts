@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'ank-org1',
-  templateUrl: './org1.component.html',
-  styleUrls: ['./org1.component.scss']
+  selector: 'ank-formorganism',
+  templateUrl: './formorganism.component.html',
+  styleUrls: ['./formorganism.component.scss']
 })
-export class Org1Component {
+export class FormorganismComponent {
   headerlabel = "Sign up form"
   subheaderlabel = "Please fill in the form to create an Account"
   namelabel = "first_name"
